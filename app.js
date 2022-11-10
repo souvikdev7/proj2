@@ -26,7 +26,7 @@ io.on('connection', function(socket){
     socket.on('msg', function(data){        
         io.sockets.emit('newmsg', data);
     })
-});
+});  
 
 http.listen(port, function(){
     console.log("Server running on port"+port)
